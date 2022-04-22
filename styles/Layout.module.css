@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  align-items: center;
+  text-align: center;
+  padding: 30px 10px;
+  gap: 20px;
+  border-radius: 10px;
+  min-width: 150px;
+  max-width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  font-style: italic;
+  padding: 20px 0;
+}
