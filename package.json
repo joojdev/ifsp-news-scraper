@@ -1,0 +1,29 @@
+{
+  "name": "ifsp-news-scraper",
+  "description": "Um scraper que pegas as notícias mais recentes do site do IFSP de São Carlos e envia para o Frontend.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joojdev/ifsp-news-scraper.git"
+  },
+  "author": "joojdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joojdev/ifsp-news-scraper/issues"
+  },
+  "homepage": "https://github.com/joojdev/ifsp-news-scraper#readme",
+  "dependencies": {
+    "jsdom": "^19.0.0",
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "superagent": "^7.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
