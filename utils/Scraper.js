@@ -37,7 +37,24 @@ function Scraper() {
           }
         })
 
-        return resolve({ firstPost, otherPosts })
+        // Get last posts.
+        // Array.from(document.querySelector('.tile-collection').children).map((element) => {
+        //   const title = element.children[0].children[0].textContent.replace(new RegExp('\t', 'g'), '').replace(new RegExp('\n', 'g'), '')
+        //   const link = element.children[0].children[0].href
+        //   const date = element.children[1].textContent
+        
+        //   return { title, link, date }
+        // })
+
+        const lastPosts = Array.from(document.querySelector('.tile-collection').children).map((element) => {
+          const title = element.children[0].children[0].textContent.replace(new RegExp('\t', 'g'), '').replace(new RegExp('\n', 'g'), '')
+          const link = element.children[0].children[0].href
+          const date = element.children[1].textContent
+        
+          return { title, link, date }
+        })
+
+        return resolve({ firstPost, otherPosts, lastPosts })
       })
     })
   }

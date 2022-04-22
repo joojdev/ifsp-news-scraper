@@ -1,6 +1,7 @@
 import PageTemplate from '@components/PageTemplate'
 import Card from '@components/Card'
 import Center from '@components/Center'
+import Post from '@components/Post'
 
 import { useEffect, useState } from 'react'
 
@@ -33,8 +34,12 @@ function HomePage() {
 
   return (
     <PageTemplate title="Notícias do IFSP São Carlos">
+      <Card title={data.firstPost.title} link={data.firstPost.link} thumbnail={data.firstPost.thumbnail}  />
       {data.otherPosts.map((post) => (
         <Card title={post.title} link={post.link} thumbnail={post.thumbnail} />
+      ))}
+      {data.lastPosts.map((post) => (
+        <Post title={post.title} link={post.link} date={post.date} />
       ))}
     </PageTemplate>
   )
