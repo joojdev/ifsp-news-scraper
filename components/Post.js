@@ -3,7 +3,7 @@ import styles from '@styles/Post.module.css'
 function Post({ title, link, date }) {
   return (
     <div>
-      <a className={styles.title} href={link}>
+      <a className={styles.title} href={link} target="_blank">
         <h2>{title}</h2>
       </a>
       <p>{date}</p>
